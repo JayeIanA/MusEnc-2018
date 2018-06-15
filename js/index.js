@@ -15,9 +15,10 @@ var defaultWidth = document.documentElement.clientWidth - 50
 options = {
     pageHeight: defaultHeight * 100 / zoom,
     pageWidth: defaultWidth * 100 / zoom,
-    scale: zoom
+    scale: zoom,
+    choiceXPathQuery: './orig'
 }
 vrvToolkit.setOptions(options)
 
 /* Show the score */
-showScore('score', 'data/example.mei') // <-- CHANGE THIS TO YOUR FILE
+showScore('score', 'data/FaureTransBeams.mei') // <-- CHANGE THIS TO YOUR FILE
